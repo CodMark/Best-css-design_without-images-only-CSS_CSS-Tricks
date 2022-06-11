@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.frem-area{
+    width: 23rem;
+    height: 5rem;
+    background: #6a7cff;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px #6a7cff73;
+}
+.frem-area p{
+    font-size: 31px;
+    letter-spacing: 2px;
+    color: white;
+    font-family: monospace;
+    font-weight: 600;
+    text-decoration: overline;
+}
+.frem-area .btn{
+    width: 70px;
+    height: 60px;
+    background: #6a7cff;
+    position: absolute;
+    bottom: -59px;
+    border-radius: 0px 0px 35px 35px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px #6a7cff73;
+}
+
+.frem-area .btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -34px;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border-top-right-radius: 35px;
+    box-shadow: 11px -10px 0 10px #6a7cff;
+}
+.frem-area .btn::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border-top-left-radius: 35px;
+    box-shadow: -10px -10px 0 10px #6a7cff;
+}
+
+.frem-area .btn img{
+    width: 34px;
+    z-index: 1;
+}
